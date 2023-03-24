@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* navbar */
+
+.navbar h1{
+    color: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: .2s;
+}
+
+a:hover{
+    color: orange;
+}
+
+header{
+    position: relative;
+    background-image: url(./img/lexi-anderson-G8wPrJyNqWQ-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: fixed;
+    background-color: #000000;
+    z-index: 10;
+}
+
+.navbar ul{
+    align-items: center;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.navbar .toggle-btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn{
+    position: relative;
+    background: linear-gradient(110deg,
+    orange,
+    rgb(255, 192, 75));
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 0;
+    display: inline-block;
+}
+
+.action-btn:hover{
+    color: #fff;
+}
+
+/* dropdown menu */
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    top: 60px;
+    width: 300px;
+    background-color: #212121;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10;
+}
+
+.dropdown-menu.open{
+    height: 240px;
+}
+
+.dropdown-menu li {
+    padding: 1rem;
+    text-align: center;
+}
+
+.dropdown-menu .last-btn{
+    background: linear-gradient(230deg,
+    orange,
+    rgb(255, 192, 75));
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    position: relative;
+    font-weight: bold;
+}
+
+/* hero */
+.hero-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .container{
+    padding-top: 5rem;
+    color: #fff;
+}
+
+.container{
+    width: 40%;
+    padding: 2rem;
+    background-color: #000000c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h1{
+    margin: 1rem;
+}
+
+.container h2{
+    margin: .5rem;
+}
+
+.container .action-btn-2{
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(40deg,
+    orange,
+    rgb(255, 192, 75));
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container .action-btn-2:hover{
+    color: #fff;
+}
+/* banner */
+
+.banner{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(120deg,
+    orange,
+    rgb(255, 192, 75));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* galery */
+
+.galery-section{
+    width: 100%;
+}
+
+.galery-item-1,
+.galery-item-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.photo-1,
+.photo-2,
+.photo-3,
+.photo-4,
+.photo-5,
+.photo-6{
+    height: 300px;
+    width: 30%;
+    background-color: red;
+    margin: 1rem auto;
+}
+
+.galery-section .overlay{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #00000086;
+    transition: .3s;
+    opacity: 0;
+    color: #fff;
+}
+
+.photo-1:hover .overlay,
+.photo-2:hover .overlay,
+.photo-3:hover .overlay,
+.photo-4:hover .overlay,
+.photo-5:hover .overlay,
+.photo-6:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* about */
+
+.container-3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-item-1,
+.about-item-2{
+    width: 40%;
+    margin: 2rem 0;
+}
+
+.about-item-1{
+    display: flex;
+    align-items: center;
+}
+
+.about-item-1 h1{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.about-item-1 p{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.about-item-1 span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-item-2{
+    background-color: red;
+    height: 500px;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p{
+    font-size: 1.2rem;
+    
+}
+
+footer a{
+    margin-left: 1rem;
+}
+
+/* responsive */
+
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action-btn{
+        display: none;
+    }
+
+    .navbar .toggle-btn{
+        display: block;
+    }
+
+    .dropdown-menu{
+        display: block;
+    }
+}
+
+@media (max-width: 576px){
+    .navbar{
+        padding: 0 1rem;
+    }
+    
+    .dropdown-menu{
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar h1{
+        font-size: 1.5rem;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .container h1{
+        text-align: center;
+    }
+
+    .galery-item-1,
+    .galery-item-2{
+        flex-direction: column;
+    }
+
+    .photo-1,
+    .photo-2,
+    .photo-3,
+    .photo-4,
+    .photo-5,
+    .photo-6{
+        width: 90%;
+    }
+
+    .galery-section .overlay{
+        font-size: .9rem;
+    }
+
+    .container-3{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-item-1,
+    .about-item-2{
+        width: 90%;
+        margin: 2rem auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-item-2{
+        height: 400px;
+    }
+
+    footer{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+}
